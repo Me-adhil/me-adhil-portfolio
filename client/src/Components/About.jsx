@@ -2,7 +2,7 @@
 const About = () => {
   
   return (
-    <div className=" fade-in px-5 md:px-15 lg:px-30 mt-30 lg:mt-50 transition-all ease-in-out">
+    <div className=" fade-in px-5 md:px-15 lg:px-30 mt-30 lg:mt-50 transition-all ease-in-out" id="about">
       <h4 className="scroll-animation font-regular text-[#F34F1C]  text-md md:text-md lg:text-2xl  ">Introduction</h4>
       <h2 className="scroll-animation font-bold  text-4xl sm:text-6xl md:text-4xl lg:text-6xl bg-gradient-to-r from-white mt-[-12px] to-[#979797] text-transparent bg-clip-text">
         Overview.

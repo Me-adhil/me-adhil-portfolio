@@ -21,13 +21,11 @@ const Projects = () => {
       setDisplayData(workdataset.graphicData);
     } else if (value === "videoediting") {
       setDisplayData(workdataset.videoEditingData);
-    } else if (value === "motiongraphics") {
-      setDisplayData(workdataset.motionGraphicsData);
-    }
+    } 
   };
 
   return (
-    <div className="px-5 md:px-15 lg:px-30 mt-20">
+    <div className="px-5 md:px-15 lg:px-30 mt-20" id="projects">
       <h4 className="font-regular text-[#F34F1C]  text-md md:text-md lg:text-2xl scroll-animation">My Awesome</h4>
       <h2 className="font-bold text-4xl sm:text-6xl md:text-4xl lg:text-6xl bg-gradient-to-r from-white mt-[-12px] to-[#979797] text-transparent bg-clip-text scroll-animation">
         Projects.
@@ -39,7 +37,7 @@ const Projects = () => {
       {/* Category buttons */}
       <div className="flex justify-center md:justify-start items-start mt-10 scroll-animation">
         <div className="rounded-3xl  text-sm border border-gray-700 text-white font-medium grid grid-cols-2 md:flex justify-center md:justify-between items-center px-2 py-2 ">
-          {["webdesign", "graphicdesign", "videoediting", "motiongraphics"].map(
+          {["webdesign", "graphicdesign", "videoediting"].map(
             (cat) => (
               <button
                 key={cat}
@@ -54,9 +52,7 @@ const Projects = () => {
                   ? "Web Design"
                   : cat === "graphicdesign"
                   ? "Graphic Design"
-                  : cat === "videoediting"
-                  ? "Video Editing"
-                  : "Motion Graphics"}
+                  : "Video Editing"}
               </button>
             )
           )}

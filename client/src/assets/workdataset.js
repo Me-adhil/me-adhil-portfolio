@@ -1,57 +1,88 @@
 import W01 from './workImage/web01.png'
+import W02 from './workImage/web02.png'
+import W03 from './workImage/web03.png'
+import W04 from './workImage/web04.png'
+import W05 from './workImage/web05.png'
 import V01 from './workImage/video01.png'
 import V02 from './workImage/video02.png'
+import G01 from './workImage/g01.png'
+import G02 from './workImage/g02.png'
+import G03 from './workImage/g03.png'
+import G04 from './workImage/g04.png'
+import G05 from './workImage/g05.png'
+import G06 from './workImage/g06.png'
+import G07 from './workImage/g07.png'
 
 const webData = [{
-
-        title: "ShopApp",
+        title: "Portfolio Website",
         image: W01,
-        describe: "An e-commerce web application with full shopping cart, product filtering, and checkout features.",
+        describe: "A personal portfolio built with React.js and TailwindCSS showcasing my web development projects, skills, and contact information with smooth animations and a responsive layout.",
     },
     {
-        title: "Render Studio",
-        image: "render.jpg",
-        describe: "A portfolio-style landing page for a 3D rendering agency, showcasing clean UI and motion effects.",
+        title: "Automated Insurance Risk Evaluation System",
+        image: W02,
+        describe: "A machine learning-based system developed using Python and Flask to predict and evaluate insurance risks using trained models and data-driven insights.",
     },
     {
-        title: "Mini Project Hub",
-        image: "miniproject.jpg",
-        describe: "A project sharing platform built using MERN stack for uploading and showcasing student mini projects.",
+        title: "E-Commerce Website (ShopApp)",
+        image: W03,
+        describe: "A full-stack e-commerce web application built using the MERN stack featuring product management, user authentication, admin dashboard, and secure checkout flow.",
+    },
+    {
+        title: "Car Rental Website",
+        image: W04,
+        describe: "A Python Flask-based web platform that enables users to browse, rent, and manage cars online, featuring booking, admin control, and user authentication.",
+    },
+    {
+        title: "WhispMap",
+        image: W05,
+        describe: "A real-time noise pollution mapping web app integrating AI/ML with the MERN stack to collect, analyze, and visualize sound data through interactive maps.",
     },
 ];
 
 const graphicData = [{
-        title: "Brand Identity Kit",
-        image: "brand-identity.jpg",
-        describe: "A complete visual branding package including logo, color palette, and typography for a modern clothing brand.",
+        title: "World Organ Donor Day – Recycle Life",
+        image: G01,
+        describe: "Awareness campaign poster promoting organ donation with symbolic hand-to-hand heart transfer and ECG visuals.",
+        link: "#"
     },
     {
-        title: "Event Poster Series",
-        image: "poster-series.jpg",
-        describe: "A set of creative posters designed for a college cultural fest, focusing on bold typography and vibrant gradients.",
+        title: "NLP Foundations Seminar",
+        image: G02,
+        describe: "Academic seminar poster for Pondicherry University on NLP from Morphology to Embedding.",
+        link: "#"
     },
     {
-        title: "Social Media Campaign",
-        image: "social-campaign.png",
-        describe: "A visually appealing social media design set made for an eco-awareness campaign, featuring minimalist illustrations.",
+        title: "Dental Implants – Perfect Teeth Await!",
+        image: G03,
+        describe: "Malayalam-English dental clinic ad featuring 3D implant visuals and bold call-to-action.",
+        link: "#"
     },
     {
-        title: "Brand Identity Kit",
-        image: "brand-identity.jpg",
-        describe: "A complete visual branding package including logo, color palette, and typography for a modern clothing brand.",
+        title: "Onam Special – Hydra Facial 50% Off",
+        image: G04,
+        describe: "Festive skincare promotion in Malayalam with treatment benefits and limited-time offer badge.",
+        link: "#"
     },
     {
-        title: "Event Poster Series",
-        image: "poster-series.jpg",
-        describe: "A set of creative posters designed for a college cultural fest, focusing on bold typography and vibrant gradients.",
+        title: "Mini Shopping Mall For Rent",
+        image: G05,
+        describe: "Commercial real estate rental ad for 14,940 sq.ft mall near KIMS Hospital, Koduvally.",
+        link: "#"
     },
     {
-        title: "Social Media Campaign",
-        image: "social-campaign.png",
-        describe: "A visually appealing social media design set made for an eco-awareness campaign, featuring minimalist illustrations.",
+        title: "ma Rap – Malayalam Rap Single",
+        image: G06,
+        describe: "Music single cover art with vintage gramophone and cultural border design. Coming soon on Spotify & Apple Music.",
+        link: "#"
     },
+    {
+        title: "Dress Code – Grand Opening Invitation",
+        image: G07,
+        describe: "Bilingual (English-Arabic) grand opening invite for second branch in Sharjah, UAE.",
+        link: "#"
+    }
 ];
-
 const videoEditingData = [{
         title: "Kamaal - Official Lyrical Video",
         image: V01,
@@ -64,38 +95,9 @@ const videoEditingData = [{
         describe: "Official lyrical video designed and produced for the Malayalam single 'NOOR' by MBL_ and AYARKAY. The track was released by MBL Official in 2025. (Role: Lyrical Video Creator/Editor)",
 
     },
-    {
-        title: "Event Highlights Reel",
-        image: "event-highlights.jpg",
-        describe: "Edited a college fest highlight reel with quick transitions, sound sync, and motion blur effects to create an engaging recap video.",
-    },
-    {
-        title: "Short Film – The Choice",
-        image: "shortfilm-choice.jpg",
-        describe: "A short film edit focusing on storytelling through color tones, sound design, and cinematic pacing using Premiere Pro and DaVinci Resolve.",
-    },
-];
-const motionGraphicsData = [{
-        title: "Logo Animation Pack",
-        image: "logo-animation.gif",
-        describe: "Created a series of animated logos using After Effects, featuring smooth morphing, particle effects, and motion blur transitions.",
-    },
-    {
-        title: "App Intro Animation",
-        image: "app-intro.gif",
-        describe: "A 15-second motion graphic introducing a mobile app, combining flat design icons, kinetic typography, and fluid motion.",
-    },
-    {
-        title: "Typography Motion Poster",
-        image: "typo-motion.gif",
-        describe: "Animated poster using kinetic typography to visualize sound beats and rhythm, synchronized with background music.",
-    },
-    {
-        title: "Explainer Video Graphics",
-        image: "explainer-video.gif",
-        describe: "Designed animated scenes and transitions for a startup explainer video, focusing on clean visuals and engaging storytelling.",
-    },
+
 ];
 
 
-export default { webData, graphicData, motionGraphicsData, videoEditingData };
+
+export default { webData, graphicData, videoEditingData };

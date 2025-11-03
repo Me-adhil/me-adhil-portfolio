@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Mail,
   Phone,
@@ -10,8 +10,41 @@ import {
 } from "lucide-react";
 
 const Contact = () => {
+  const [formValues, setFormValue] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
+  const onChangeFunction = (e) => {
+    setFormValue((p) => ({
+      ...p,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "1207f48f-ee29-41b8-8bdd-6511f2afc98c");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    console.log(data);
+    setFormValue({
+      name: "",
+      email: "",
+      number: "",
+      message: "",
+    });
+  };
+
   return (
-    <div className="px-5 md:px-15 lg:px-30 mt-20 text-white">
+    <div className="px-5 md:px-15 lg:px-30 mt-20 text-white" id="contacts">
       {/* Heading */}
       <h4 className="font-regular text-[#F34F1C] text-md md:text-md lg:text-2xl scroll-animation">
         Get in touch
@@ -43,7 +76,7 @@ const Contact = () => {
             </a>
           </div>
 
-          <div  className="scroll-animation">
+          <div className="scroll-animation">
             <h3 className="text-sm md:text-md lg:text-2xl font-semibold text-[#F34F1C] mb-2 ">
               WhatsApp
             </h3>
@@ -57,22 +90,29 @@ const Contact = () => {
             </a>
           </div>
 
-  
-          <div  className="scroll-animation">
+          <div className="scroll-animation">
             <h3 className="text-sm md:text-md lg:text-2xl font-semibold text-[#F34F1C] mb-2 ">
               Follow Me
             </h3>
             <div className="flex space-x-5 mt-2 scroll-animation">
-              <a href="https://www.instagram.com/_adh.l/" className="hover:text-[#F34F1C] transition-colors">
+              <a
+                href="https://www.instagram.com/_adh.l/"
+                className="hover:text-[#F34F1C] transition-colors"
+              >
                 <Instagram size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/muhammed-adhil-b17019350/?originalSubdomain=in" className="hover:text-[#F34F1C] transition-colors">
+              <a
+                href="https://www.linkedin.com/in/muhammed-adhil-b17019350/?originalSubdomain=in"
+                className="hover:text-[#F34F1C] transition-colors"
+              >
                 <Linkedin size={24} />
               </a>
-              <a href="https://github.com/Me-adhil" className="hover:text-[#F34F1C] transition-colors">
+              <a
+                href="https://github.com/Me-adhil"
+                className="hover:text-[#F34F1C] transition-colors"
+              >
                 <Github size={24} />
               </a>
-             
             </div>
           </div>
         </div>
@@ -80,33 +120,30 @@ const Contact = () => {
         {/* Right Section: Contact Form */}
         <form
           className="bg-[#181818] border border-gray-700 rounded-3xl p-6 space-y-4 hover:scale-103 transition-transform duration-300 scroll-animation"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={onSubmit}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4 ">
             <div>
-              <label className="text-sm text-gray-400">
-                First Name (optional)
-              </label>
+              <label className="text-sm text-gray-400">Name</label>
               <input
                 type="text"
-                className="w-full mt-1 p-3 rounded-xl bg-transparent border border-gray-600 focus:border-[#F34F1C] outline-none"
-              />
-            </div>
-            <div>
-              <label className="text-sm text-gray-400">
-                Last Name (optional)
-              </label>
-              <input
-                type="text"
+                required
+                onChange={onChangeFunction}
+                name="name"
+                value={formValues.name}
                 className="w-full mt-1 p-3 rounded-xl bg-transparent border border-gray-600 focus:border-[#F34F1C] outline-none"
               />
             </div>
           </div>
 
           <div>
-            <label className="text-sm text-gray-400">Email (optional)</label>
+            <label className="text-sm text-gray-400">Email </label>
             <input
               type="email"
+              name="email"
+              required
+              onChange={onChangeFunction}
+              value={formValues.email}
               className="w-full mt-1 p-3 rounded-xl bg-transparent border border-gray-600 focus:border-[#F34F1C] outline-none"
             />
           </div>
@@ -124,7 +161,11 @@ const Contact = () => {
             <div className="col-span-2">
               <label className="text-sm text-gray-400">Phone Number</label>
               <input
-                type="text"
+                type="number"
+                name="number"
+                onChange={onChangeFunction}
+                value={formValues.number}
+                required
                 className="w-full mt-1 p-3 rounded-xl bg-transparent border border-gray-600 focus:border-[#F34F1C] outline-none"
               />
             </div>
@@ -134,6 +175,10 @@ const Contact = () => {
             <label className="text-sm text-gray-400">How can I help you?</label>
             <textarea
               rows="4"
+              required
+              value={formValues.message}
+              onChange={onChangeFunction}
+              name="message"
               className="w-full mt-1 p-3 rounded-xl bg-transparent border border-gray-600 focus:border-[#F34F1C] outline-none"
               placeholder="Let's talk..."
             ></textarea>
