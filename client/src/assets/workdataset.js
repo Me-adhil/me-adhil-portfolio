@@ -17,21 +17,25 @@ const webData = [{
         title: "Portfolio Website",
         image: W01,
         describe: "A personal portfolio built with React.js and TailwindCSS showcasing my web development projects, skills, and contact information with smooth animations and a responsive layout.",
+        link: "#"
     },
     {
         title: "Automated Insurance Risk Evaluation System",
         image: W02,
         describe: "A machine learning-based system developed using Python and Flask to predict and evaluate insurance risks using trained models and data-driven insights.",
+        link: ""
     },
     {
         title: "E-Commerce Website (ShopApp)",
         image: W03,
         describe: "A full-stack e-commerce web application built using the MERN stack featuring product management, user authentication, admin dashboard, and secure checkout flow.",
+        link: "https://github.com/Me-adhil/mern-ecommerce-app"
     },
     {
         title: "Car Rental Website",
         image: W04,
         describe: "A Python Flask-based web platform that enables users to browse, rent, and manage cars online, featuring booking, admin control, and user authentication.",
+        link: "https://github.com/Me-adhil/Car-rental-Website"
     },
     {
         title: "WhispMap",
@@ -44,7 +48,7 @@ const graphicData = [{
         title: "World Organ Donor Day – Recycle Life",
         image: G01,
         describe: "Awareness campaign poster promoting organ donation with symbolic hand-to-hand heart transfer and ECG visuals.",
-        link: "#"
+        link: "https://www.instagram.com/p/DNR6bhMoGne/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         title: "NLP Foundations Seminar",

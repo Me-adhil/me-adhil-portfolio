@@ -62,7 +62,7 @@ const Projects = () => {
       {/* Display section */}
       <div className=" mt-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {displayData.map((item, index) => (
-         
+           
             <div
             key={index}
             className="border  scroll-animation border-gray-700 bg-[#181818] rounded-3xl px-4 py-4 hover:scale-103 transition-transform duration-300"

@@ -5,12 +5,12 @@ import AnimatedCircle from "./Skillcircle";
 const Skills = () => {
   const skills = [
   { name: "JavaScript", percentage: 80 },
-  { name: "Next Js", percentage: 75 },
-  { name: "React Js", percentage: 85 },
+  { name: "React Js", percentage: 70 },
+  { name: "Node Js", percentage: 70 },
   { name: "MongoDb", percentage: 70 },
   { name: "TailwindCSS", percentage: 85 },
-  { name: "GIT", percentage: 70 },
-  { name: "Express Js", percentage: 90 },
+  { name: "GIT", percentage: 65 },
+  { name: "Express Js", percentage: 60 },
   { name: "Figma", percentage: 70},
   { name: "HTML", percentage: 95 },
   { name: "CSS", percentage: 85 },
