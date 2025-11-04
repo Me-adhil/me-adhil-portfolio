@@ -107,6 +107,7 @@
     from {
         opacity: 1;
         transform: translateY(0);
+    
     }
     to {
         opacity: 0;
@@ -114,7 +115,7 @@
     }
 }
 
-.scroll-down-animation {
+scroll-down-animation {
     opacity: 1;
     animation-name: fade-out-down;
     animation-duration: 1.5s;
