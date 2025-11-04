@@ -14,21 +14,17 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className=" flex justify-center space-x-6 mb-6">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
+        <a href="https://www.instagram.com/_adh.l/" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
           <FaInstagram size={22} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
+        <a href="https://www.linkedin.com/in/muhammed-adhil-b17019350/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
           <FaLinkedin size={22} />
         </a>
-        <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
-          <FaXTwitter size={22} />
-        </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
+        
+        <a href="https://github.com/Me-adhil" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
           <FaGithub size={22} />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
-          <FaFacebook size={22} />
-        </a>
+        
         <a href="https://wa.me/919037062976" target="_blank" rel="noopener noreferrer" className="hover:text-[#F34F1C] transition">
           <FaWhatsapp size={22} />
         </a>
