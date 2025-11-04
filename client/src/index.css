@@ -115,12 +115,12 @@
     }
 }
 
-scroll-down-animation {
-    opacity: 1;
+.scroll-down-animation {
+    opacity: 0;
     animation-name: fade-out-down;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
     animation-timeline: view();
-    animation-range: exit 0% cover 100%;
+    animation-range: exit 10% cover 100%;
 }
